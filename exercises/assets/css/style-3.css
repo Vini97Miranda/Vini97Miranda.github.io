@@ -9,7 +9,30 @@ body { line-height: 1.5; min-height: 100vh }
 img { width: 100%; height: auto; display: block }
 input, button, textarea, select { font: inherit }
 
-section *:last-child { margin-bottom: 0 !important }
+  /* === PADDING AROUND SECTION CONTENT ====  */
+  section {
+    padding: 4% 20%;
+  }
+  section *:last-child {
+    margin-bottom: 0 !important;
+  }
+  
+  /* ====== PADDING AROUND CONTENT ======  */
+  
+  /* Desktops */
+  @media (min-width: 768px) {
+    section {
+      padding: 4% 20%;
+    }
+  }
+  
+  /* Mobiles */
+  @media (max-width: 767px) {
+    section {
+      padding: 5% 5%;
+    }
+  }
+
 
 /* ====== Stylesheet ======  */
 .section-1{
@@ -55,3 +78,4 @@ p {
     margin-bottom: 20px;
     color: black;
 }
+

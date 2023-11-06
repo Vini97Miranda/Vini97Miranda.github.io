@@ -56,9 +56,11 @@ p {
 a { color: darkgreen; }
 
 img{
-    margin-bottom: 32px;
-    border-radius: 15px;
-    width: 800px;
+   
+    display: block;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 10%;
     
   }
 
