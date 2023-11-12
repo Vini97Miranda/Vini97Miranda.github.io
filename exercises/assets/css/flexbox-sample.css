@@ -1,5 +1,5 @@
-
 /*  ============= WEB BROWSER RESETS ============ */
+
 * { margin: 0; padding: 0; border: none }
 *, *::before, *::after { box-sizing: border-box }
 html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
@@ -15,12 +15,12 @@ input, button, textarea, select { font: inherit }
 /* ==== Web page width ==== */
 
 /* Desktops */
+
 @media (min-width:768px) { body { padding: 4% 18% } }
 
-
 /* Mobiles */
-@media (max-width:767px) { body { padding: 12% 8% } }
 
+@media (max-width:767px) { body { padding: 12% 8% } }
 
 /* ==== Headings ==== */
 
@@ -30,7 +30,6 @@ h1 {
     text-align: center;
     letter-spacing: -1px;
     margin-bottom: 64px;
-    margin-top: -120px;
 }
 
 h3 {
@@ -40,52 +39,59 @@ h3 {
 }
 
 /* Paragraphs of text */
+
 p {
 	font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     color: #696969;
-    line-height: 1.5
+    line-height: 1.7
 }
 
-/* Div selector with properties and values */
+section > * { margin-left: 0 }
 
-.bono {
-    background-color: #4081ec;
+/* == FLEXBOX PARENT CONTAINER == */
+
+.container-flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+.bono, .edge, .adam, .larry {
     padding: 12px;
-    margin-bottom: 40px;
-    width: 220px
+	margin-bottom: 40px;
+    margin-right: 2px;
+    width: 23%;
 }
 
-.edge {
-    background-color: #ffbb33;
-    padding: 12px;
-    margin-bottom: 40px;
-    width: 220px
+/* Headings */
+
+.bono h3, .edge h3, .adam h3, .larry h3 {
+    font-size: var(--font-size-md);
+	line-height: 1.2;
+    margin-bottom: 2px;
 }
 
-.adam {
-    background-color: #f73345;
-    padding: 12px;
-    margin-bottom: 40px;
-    width: 220px
+/* Paragraphs of text */
+
+.bono p, .edge p, .adam p, .larry p {
+    font-size: var(--font-size-base);
+    line-height: 1.7
 }
 
-.larry {
-    background-color: #e0e0e0;
-    padding: 12px;
-    margin-bottom: 40px;
-    width: 220px
+.bono { background-color: #4081ec }
+.edge { background-color: #ffbb33 }
+.adam { background-color: #f73345 }
+.larry { background-color: #e0e0e0 }
+
+.bono h3, .bono p,
+.adam h3, .adam p { color: #fff }
+
+.edge h3, .edge p { color: #000 }
+.larry h3, .larry p { color: #000 }
+
+@media (max-width:767px) {
+    .bono, .edge, .adam, .larry {
+        width: 100%;
+    }
 }
-
-.bono h3,
-.bono p,
-.adam h3,
-.adam p { color: #fff }
-
-.edge h3,
-.edge p,
-.larry h3,
-.larry p { color: #000 }
- 
-
-
