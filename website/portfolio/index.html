@@ -20,6 +20,8 @@
 
     <!-- Font Awesome 6 icons. Delete if not using. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet" type="text/css"> 
+
 
 	<!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJBMYJEJ7R"></script>
@@ -52,7 +54,7 @@
             <ul class="links-wrapper">
                 <li><a href="../../website/index.html">Home</a></li>
                 <li><a href="../../website/portfolio/index.html">Portfolio</a></li>
-                <li><a href="../store/index.html">Store</a></li>
+                <li><a href="../portfolio/store/index.html">Store</a></li>
                 <li><a class="btn btn-solid btn-soft" id="btn-cta" href="../../contact/contact.html"><span>Contact</span> <i class="fa-regular fa-envelope"></i></a></li>
             </ul>
             </div>
@@ -148,7 +150,7 @@
 		<ul class="footer-links">
 			<li><a href="../../website/index.html">Home</a></li>
 			<li><a href="../portfolio/index.html">Portfolio</a></li>
-			<li><a href="../store/index.html">Store</a></li>
+			<li><a href="../portfolio/store/index.html">Store</a></li>
             <li><a href="../../contact/contact.html">Contact</a></li>
 		</ul>
 
@@ -162,6 +164,24 @@
 	</footer>
 
     <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
+
+	<!-- JavaScript for Cookie Consent Popup Message -->
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
+	window.cookieconsent.initialise({
+		"palette": {
+			"popup": {
+				"background": "#000"
+			},
+			"button": {
+				"background": "#f1d600"
+			}
+		},
+		"content": {
+			"href": "../privacy.html"
+		}
+	});
+	</script>
 
 </body>
 </html>
