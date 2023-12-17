@@ -1,13 +1,16 @@
 
-nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #0f172a }
+nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #f8d49a }
 
-header.theme-dark   { background-color: #0f172a }
+header.theme-dark   { background-color: #f8d49a }
 
 header.theme-dark  h1 { color: var(--sky-400); }
 
-section.theme-dark   { background-color: #0f172a }
+section.theme-dark   { background-color:#f8d49a;
+    background-image: linear-gradient(180deg, #f8d49a, #15552a);
+}
 
-footer.theme-dark   { background-color: #0f172a }
+footer.theme-dark   { background-color: #15552a }
+
 
 
 
